@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "code"
+version = "0.1.0"
+description = ""
+authors = ["Lutmanova_Ekaterina <elutmanova817@gmail.com>"]
+readme = 'README.md'
+packages = [{include = 'code'}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+requests = "^2.28.1"
+
+[tool.poetry.scripts]
+do-something = 'code.file:main'
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
